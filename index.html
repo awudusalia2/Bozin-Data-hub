@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .hero{
+            display: flex;
+            background-color: rgb(184, 252, 222);
+            position: sticky;
+            
+            
+            
+        }
+       h3{
+        color: maroon;
+        margin: 20px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+       }
+    .nav{
+        padding-left: 550px;
+        margin-top: 20px;
+      
+    }
+       
+      nav ul li {
+        justify-content: space-between;
+        display: inline-block;
+        text-decoration: none;
+        list-style: none;
+
+       }
+       nav ul li a{
+        text-decoration: none;
+        padding: 10px 15px 10px 15px;
+        color: rgb(253, 251, 251);
+        background-color: rgb(4, 57, 250);
+        border-radius: 10px;
+        margin: 5px; 
+       }
+       
+       #services{
+        margin-top: 20px;
+       }
+      
+       
+      /* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+}
+
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* css for data prices */
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+ 
+   /* css for button up */    
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+} 
+#about p{
+  text-align: center;
+  line-height: 20px;
+  font-size: 1rem;
+  font-family:sans-serif;
+}
+.info{
+  background-color: rgba(86, 189, 99, 0.989);
+  font-weight: bold;
+  padding: 10px;
+  display:inline-block;
+   margin: 2px;
+   margin-bottom: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.picturew{
+  width: auto;
+  height: 200px;
+float: right;
+margin-right: 100px;
+margin-top: 25px;
+}
+.img{
+
+  width: 500px;
+  border: #09fa9e 1px solid;
+  border-radius: 10px;
+}
+.infoma{
+  background-color:white;
+  border: #04AA6D ipx solid;
+  
+  margin-left: 80px;
+}
+.say{
+  background-color: #04AA6D;
+}
+footer{
+  float:none;
+}
+.sam{
+  width: auto;
+  height: 500px;
+  background-color: #04AA6D;
+  margin-right: 10px;
+}
+</style>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div class="hero" >
+        <h3>TEACHER OT DATA</h3>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+<hr> 
+<marquee behavior="" direction=""><h1>Welcome to Teacher OT Data Hub</h1></marquee>
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="image/data1.jpg" style="width:100% ;height: 500px;">
+  <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="image/data2.jpg" style="width:100% ;height: 500px;">
+  <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="image/data3.jpg" style="width:100% ;height: 500px;">
+  <div class="text">Caption Three</div>
+  </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<!-- Service page-->
+
+<div  id="services">
+
+ <h2 style="text-align:center">Data Prices</h2>
+ <p style="text-align:center">We deal in both MTN and Airtel tigo bundle at an affordable price</p>
+
+ <div class="columns">
+  <ul class="price">
+    <li class="header">Data Package</li>
+    <li class="grey">MTN</li>
+    <li>50GB Data</li>
+    <li>GHS 190</li>
+    <li>Unexpiry and Visible</li>
+    <li class="grey"><a href="https://wa.link/rzx96i" class="button">Request Data</a></li>
+  </ul>
+ </div>
+
+ <div class="columns">
+    <ul class="price">
+      <li class="header" style="background-color:#04AA6D">Data Package</li>
+      <li class="grey">MTN</li>
+      <li>40GB Data</li>
+      <li>GHS 160</li>
+      <li>Unexpiry and Visible</li>
+      <li class="grey"><a href="https://wa.link/rzx96i" class="button">Request Data</a></li>
+    </ul>
+  </div>
+
+  <div class="columns">
+    <ul class="price">
+      <li class="header" >Data Package</li>
+      <li class="grey">MTN</li>
+      <li>30GB Data</li>
+      <li>GHS 120</li>
+      <li>Unexpiry and Visible</li>
+      <li class="grey"><a href="https://wa.link/rzx96i" class="button">Request Data</a></li>
+    </ul>
+  </div>
+
+  <div class="columns">
+    <ul class="price">
+      <li class="header" style="background-color:#04AA6D">Data Package</li>
+      <li class="grey">MTN</li>
+      <li>25GB Data</li>
+      <li>GHS 95</li>
+      <li>Unexpiry and Visible</li>
+      <li class="grey"><a href="https://wa.link/rzx96i" class="button">Request Data</a></li>
+    </ul>
+  </div>
+
+  <div class="columns">
+    <ul class="price">
+      <li class="header" >Data Package</li>
+      <li class="grey">MTN</li>
+      <li>20GB Data</li>
+      <li>GHS 80</li>
+      <li>Unexpiry and Visible</li>
+      <li class="grey"><a href="https://wa.link/rzx96i" class="button">Request Data</a></li>
+    </ul>
+  </div>
+
+  <div class="columns">
+    <ul class="price">
+      <li class="header" style="background-color:#04AA6D">Data Package</li>
+      <li class="grey">MTN</li>
+      <li>15GB Data</li>
+      <li>GHS 65</li>
+      <li>Unexpiry and Visible</li>
+      <li class="grey"><a href="https://wa.link/rzx96i" class="button">Request Data</a></li>
+    </ul>
+  </div>
+
+  <div class="columns">
+    <ul class="price">
+      <li class="header" >Data Package</li>
+      <li class="grey">MTN</li>
+      <li>10GB Data</li>
+      <li>GHS 50</li>
+      <li>Unexpiry and Visible</li>
+      <li class="grey"><a href="https://wa.link/rzx96i" class="button">Request Data</a></li>
+    </ul>
+  </div>
+
+  <div class="columns">
+    <ul class="price">
+      <li class="header" style="background-color:#04AA6D">Data Package</li>
+      <li class="grey">MTN</li>
+      <li>8GB Data</li>
+      <li>GHS 40</li>
+      <li>Unexpiry and Visible</li>
+      <li class="grey"><a href="https://wa.link/rzx96i" class="button">Request Data</a></li>
+    </ul>
+  </div>
+
+  <div class="columns">
+    <ul class="price">
+      <li class="header" >Data Package</li>
+      <li class="grey">MTN</li>
+      <li>5GB Data</li>
+      <li>GHS 30</li>
+      <li>Unexpiry and Visible</li>
+      <li class="grey"><a href="https://wa.link/rzx96i" class="button">Request Data</a></li>
+    </ul>
+  </div>
+</div>
+<br>
+<hr>
+
+<!-- About Page-->
+
+<div id="about">
+
+  <div class="picturew">
+    <div class="img">
+      
+      <img src="image/data1.jpg" alt="image" width="80%" height="300px" style="margin: 20px 50px ;">
+      <div class="infoma">
+        <div class="info" >
+          
+            <p>3.5</p>
+            <p>total customers</p>
+          
+        </div>
+  
+        <div class="info">
+         
+          <p>23</p>
+          <p>projects</p>
+        
+        </div>
+  
+        <div class="info">
+          <p>830+</p>
+          <p>customers</p>
+        </div>
+  
+      </div>
+    </div>
+
+  </div>
+  
+</div>
+
+
+
+<footer style="text-align: center;">
+    All Rigts reserverd by Teacher OT Data HUb
+</footer>
+
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+
+
+
+    // Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+</body>
+   
+</html>
